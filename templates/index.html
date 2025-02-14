@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block content %}
+{{navbar|safe}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 p-0">
+            <section class="carousel" id="section1" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 c-img" src="{{ url_for('static', filename='img/cover/cover1.jpg') }}" alt="cover" width="100%">
+                        <div class="carousel-caption d-none d-md-block fadein">
+                            <h1>PERKEMBANGAN <span style="color: red;font-family: 'Monoton', sans-serif;">HIP HOP</span> INDONESIA</h1>
+                            <lead>What is Hiphop?</lead><br>
+                            <a href="#history"><button type="button" class="btn"><h2 class="bi bi-arrow-down-circle" style="color: rgb(93, 178, 44);"></h2></button></a>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </div>
+</div>
+<div class="container-md" id="history">
+    <div class="row">
+        <div class="col-md-12 p-4">
+            <section id="section2">
+                <div class="carousel slide carousel-fade" id="carouselslider">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="carouselslider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="carouselslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="carouselslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="static/img/cover/sec_1.jpg" alt="" srcset="" height="480px" width="100%">
+                                </div>
+                                <div class="col-sm-6 p-md-3">
+                                    <h3>Penjelasan</h3>
+                                    <p>
+                                        Musik hip hop atau Hip-hop atau musik rap adalah sebuah gerakan norma budaya istiadat yang mulai tumbuh sekitar tahun 1970-an.
+                                    </p>
+                                    <p>
+                                        Dikembangkan oleh masyarakat Afro-Amerika dan Latin-Amerika. Hip Hop merupakan perpaduan antara MCing (lebih dikenal rapping), DJing, Breakdance, dan Grafiti.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="static/img/cover/sec_3.jpg" alt="" srcset="" height="480px" width="100%">
+                                </div>
+                                <div class="col-sm-6 p-md-3">
+                                    <h3>Perkembangan</h3>
+                                    <p>
+                                        Awal pertumbuhan Hip Hop dimulai dari The Bronx di kota New York kemudian terus berkembang dengan pesat hingga ke seluruh dunia.
+                                        Hip Hop pertama kali diperkenalkan oleh seorang Afro-Amerika, Grandmaster Flash dan The Furious Five.
+                                    </p>
+                                    <p>
+                                        Awalnya musik Hip Hop hanya diberi inti dengan musik dari Disk Jockey dengan membuat variasi dari putaran disk sampai menghasilkan bunyi-bunyi yang unik. "Rapping" akhir hadir untuk mengisi vokal dari bunyi-bunyi tersebut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="static/img/cover/sec_2.jpg" alt="" srcset="" height="480px" width="100%">
+                                </div>
+                                <div class="col-sm-6 p-md-3">
+                                    <h3>Pelopor lainnya</h3>
+                                    <p>
+                                        Run-D.M.C. (atau Run DMC) adalah kelompok musik hip hop yang didirikan oleh Jason "Jam Master Jay" Mizell dan beranggotakan Joseph "Run" Simmons dan Darryl "D.M.C." McDaniels. Kelompok ini adalah salah satu pelopor musik rap pada tahun 1980-an. Ketiga anggotanya dibesarkan di Hollis, Queens, New York, Amerika Serikat.                                    
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselslider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>            
+</div>
+<div class="container-fluid diagonal bg-one" id="history-indonesia">
+    <section id="section3"  class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="static/img/cover/cover.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="col-md-12 p-4">
+                <h2 class="text-center">Sejarah HipHop di Indonesia</h2>
+            </div>
+            <div class="col-md-12">
+                <p>
+                Rap makin dikenal masyarakat dunia seiring meredupnya musik disko pada paruh pertama 1980-an. Hal inilah yang kemudian menjadikan rap jadi musik alternatif anak muda Amerika, terlebih setelah para musisi itu masuk ke label rekaman.
+
+                Di Indonesia, sejarah musik rap mulai populer dikenal masyarakat pada dekade 90-an dengan munculnya nama Iwa Kusuma yang akrab dipanggil Iwa K lewat hitsnya yang berjudul Bebas. Dari sinilah musisi asal Jakarta itu terpatri sebagai salah satu ikon musik rap tanah air.
+
+                <br><br>Selain Iwa K, musisi rap di Indonesia juga ada Benyamin Suaeb, Saykoji, Denada, Bondan Prakoso, Farid Hardja, dan masih banyak lagi. Mereka juga memiliki ciri khasnya masing-masing baik dari cara menyanyi, lirik, dan tema yang digunakan untuk berkarya.
+
+                Munculnya musik rap juga beriringan dengan tren fesyen seperti atribut jaket, dan kaos kebesaran, juga topi, serta bandana hoop earrings. Tak hanya itu, musik rap pun beririsan dengan anak-anak basket yang sering memutar lagu tersebut saat pertandingan berlangsung atau ketika nongkrong.
+
+                <br><br>Dengan makin mudahnya arus informasi, saat ini musik rap juga semakin beragam dengan  warna baru dan siap bersaing tidak hanya di dalam negeri tapi juga kancah internasional. Selain mengeksplorasi ragam bahasa daerah, para musisi rap juga mengemas musiknya dengan pendekatan kritik sosial, seperti Morgue Vanguard, Tuantigabelas, hingga Joe Million.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+{% include 'timeline.html' %}
+{% include 'music.html' %}
+
+{{footer|safe}}
+
+{% endblock %}

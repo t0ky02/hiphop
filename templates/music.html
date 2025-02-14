@@ -1,0 +1,55 @@
+{% block content %}
+<div class="container-fluid diagonal bg-three" id="music-section">
+    <section class="content" id="section5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Music Player</h1>
+                <div class="text-center" style="border-color: brown; border-width: 5px; width: 100px; border-style: solid; margin: 0;"></div>
+                <p class="py-2" style="color: black;">Putar musik hiphop artis Indonesia</p>
+            </div>
+            <div class="col-md-12">
+                <div class="artist-list">
+                    <div class="artist-container">
+                        {% for artist in artists %}
+                            {% if artist == artist %}
+                            <button class="artist-button" onclick="loadSongs('{{ artist }}')">
+                                <a href="#music-player"></a>
+                                    <img src="/static/img/foto_artis/{{artist}}-musiclist.png" alt="">
+                                    <div class="artist-name">
+                                        <p class="text-center">{{ artist }}</p>
+                                    </div>
+                                </a>
+                            </button>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>    
+            </div>
+            <div class="col-md-12">
+                <div id="music-player" class="music-box">
+                    <img src="/static/img/cover/barcode.png" id="foto-artis" class="d-block w-100 music-box" alt="">
+                    <div class="row">
+                        <div class="music-container-details">
+                            <div class="col-sm-12">
+                                <h2 class="nama-artis"></h2>
+                            </div>
+                            <div class="col-sm-12 music-container">
+                                <div class="col-sm-12 music-list">
+                                    <ol class="music-list-box">
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 py-3">
+                                <div id="playing-title" class="playing-title"></div>
+                            </div>
+                            <div class="col-sm-12">
+                                <audio src="" id="audio-player" controls></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+</div>    
+{% endblock %}
